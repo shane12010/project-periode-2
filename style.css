@@ -18,7 +18,8 @@ body{
     border-radius: 3px;
     padding: 20px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 20 px;
+    
   }
   #submit:hover{
     background-color: #3a8;
