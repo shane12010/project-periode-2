@@ -2,7 +2,31 @@ body{
     font-size: 20px;
     font-family: sans-serif;
     color: #333;
+    background-color: #07f407;
   }
+  nav{
+    background-color: #006445;
+    margin: -8px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10px;
+    margin-top: 30px;
+    color:  #dbff4a;
+  }
+ 
+  .navf{
+    margin-left: -45px;
+  }
+
   .question{
     font-weight: 600;
   }
@@ -23,4 +47,8 @@ body{
   }
   #submit:hover{
     background-color: #3a8;
+  }
+  
+  .intro{
+    size: 20px;
   }
