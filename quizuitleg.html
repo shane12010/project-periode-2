@@ -1,12 +1,28 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head> <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible"
- content="IE=edge">
- <meta name="viewport"
- content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
+
+ 
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible"
+
+    content="IE=edge">
+
+    <meta name="viewport"
+
+    content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+ 
+
 </head>
+
+ 
 
 <body>
 
@@ -186,7 +202,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
   function showQuestions(questions, quizContainer){
 
- 
+    // we'll need a place to store the output and the answer choices
 
     var output = [];
 
@@ -194,25 +210,25 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 
 
-   
+    // for each question...
 
     for(var i=0; i<questions.length; i++){
 
      
 
-
+      // first reset the list of answers
 
       answers = [];
 
 
 
-      
+      // for each available answer...
 
       for(letter in questions[i].answers){
 
 
 
-
+        // ...add an html radio button
 
         answers.push(
 
@@ -232,7 +248,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 
 
-     
+      // add this question and its answers to the output
 
       output.push(
 
@@ -246,7 +262,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 
 
-    
+    // finally combine our output list into one string of html and put it on the page
 
     quizContainer.innerHTML = output.join('');
 
@@ -266,7 +282,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
    
 
-
+    // keep track of user's answers
 
     var userAnswer = '';
 
@@ -274,31 +290,35 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
    
 
-  
+    // for each question...
 
     for(var i=0; i<questions.length; i++){
 
 
 
+      // find selected answer
 
       userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
 
      
 
-   
+      // if answer is correct
 
       if(userAnswer===questions[i].correctAnswer){
 
-    
+        // add to the number of correct answers
 
         numCorrect++;
 
        
 
+        // color the answers green
+
         answerContainers[i].style.color = 'lightgreen';
 
       }
 
+      // if answer is wrong or blank
 
       else{
 
@@ -311,14 +331,22 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
 
+
+    // show number of correct answers out of total
+
     resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
 
   }
 
 
+
+  // show questions right away
+
   showQuestions(questions, quizContainer);
 
+ 
 
+  // on submit, show results
 
   submitButton.onclick = function(){
 
