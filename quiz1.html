@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>shane Quiz</title>
+    
+</head>
+<body>
+    <nav>
+        <img class="logo" src="logo.png" alt="">
+            <a class="a" href="home.html">home</a>
+            <a class="a" href="quiz1.html">quiz</a>
+            <a class="a" href="chatbot">chatbot</a>
+            <a class="a" href="talent tree">talent tree</a>
+            <a class="a" href="socials.html">Socials</a>
+         
+            </nav>
+            <h1 class="intro">welkom bij de quiz van Shane </h1>   
+    
+<div id="quiz-container">
+    <div class="question" id="question1">
+        <h3>vraag 1: Waar staat js voor?</h3>
+        <label>
+            <input type="radio" name="q1" value="html"> html
+        </label>
+        <label>
+            <input type="radio" name="q1" value="javascript"> javascript
+        </label>
+        <label>
+            <input type="radio" name="q1" value="css"> css
+        </label>
+    </div>
+
+    <div class="question" id="question2">
+        <h3>vraag 2: wat is html de funcie?</h3>
+        <label>
+            <input type="radio" name="q2" value="skelet van de website"> skelet van de website
+        </label>
+        <label>
+            <input type="radio" name="q2" value="de versiering van de website"> de versiering van de website
+        </label>
+        <label>
+            <input type="radio" name="q2" value="om de website interactief gemaakt"> om de website interactief gemaakt
+        </label>
+    </div>
+
+    <div class="question" id="question3">
+        <h3>vraag 3: hoeveel jaar duurt deze opleiding?</h3>
+        <label>
+            <input type="radio" name="q3" value="4 jaar"> 4 jaar
+        </label>
+        <label>
+            <input type="radio" name="q3" value="5 jaar"> 5 jaar
+        </label>
+        <label>
+            <input type="radio" name="q3" value="3 jaar"> 3 jaar
+        </label>
+    </div>
+    <div class="question" id="question4">
+        <h3>vraag 4: met php kan je je website mooi maken?</h3>
+        <label>
+            <input type="radio" name="q4" value="ja"> ja
+        </label>
+        <label>
+            <input type="radio" name="q4" value="nee"> nee
+        </label>
+       
+    </div>
+    <div class="question" id="question5">
+        <h3>vraag 5: js staat voor java</h3>
+        <label>
+            <input type="radio" name="q5" value="ja"> ja
+        </label>
+        <label>
+            <input type="radio" name="q5" value="nee"> nee
+        </label>
+       
+    </div>
+    <div class="question" id="question6">
+        <h3>vraag 6: In de script-tag plaatsen we JavaScript</h3>
+        <label>
+            <input type="radio" name="q6" value="ja"> ja
+        </label>
+        <label>
+            <input type="radio" name="q6" value="nee"> nee
+        </label>
+       
+    </div>
+    <div class="question" id="question7">
+        <h3>vraag 7: een break kan je maken door de br tag te gebruiken</h3>
+        <label>
+            <input type="radio" name="q7" value="ja"> ja
+        </label>
+        <label>
+            <input type="radio" name="q7" value="nee"> nee
+        </label>
+        
+    </div>
+    <button onclick="checkAnswers()">controleer je antwoorden</button>
+    
+</div>
+
+<script>
+    function checkAnswers() {
+        // Get user's answers
+        var answer1 = document.querySelector('input[name="q1"]:checked');
+        var answer2 = document.querySelector('input[name="q2"]:checked');
+        var answer3 = document.querySelector('input[name="q3"]:checked');
+        var answer4 = document.querySelector('input[name="q4"]:checked');
+        var answer5 = document.querySelector('input[name="q5"]:checked');
+        var answer6 = document.querySelector('input[name="q6"]:checked');
+        var answer7 = document.querySelector('input[name="q7"]:checked');
+
+        // `of alle vragen zijn beantwoord
+        if (answer1 && answer2 && answer3 && answer4 && answer5 && answer6 && answer7) {
+            // Check answers and provide feedback
+            var score = 0;
+
+            if (answer1.value === "javascript") {
+                score++;
+            }
+
+            if (answer2.value === "skelet van de website") {
+                score++;
+            }
+            if (answer3.value === "4 jaar") {
+                score++;
+            }
+            if (answer4.value === "nee") {
+                score++;
+            }
+            if (answer5.value === "nee") {
+                score++;
+            }
+            if (answer6.value === "ja") {
+                score++;
+            }
+            if (answer7.value === "ja") {
+                score++;
+            }
+
+
+            alert("Your score: " + score + "/7");
+        } else {
+            alert("antwoord op alles voor je het inleverd.");
+        }
+    }
+</script>
+<footer>
+    &copy; 2024 quiz Page
+  </footer>  
+</body>
+</html>
