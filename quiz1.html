@@ -10,15 +10,15 @@
 <body>
     <nav>
         <img class="logo" src="logo.png" alt="">
-        <a class="a" href="home.html">home</a>
-        <a class="a" href="quiz1.html">quiz</a>
-        <a class="a" href="chatbot">chatbot</a>
-        <a class="a" href="Talenttree.html">talent tree</a>
+        <a class="a" href="home.html">Home</a>
+        <a class="a" href="quiz1.html">Quiz</a>
+        <a class="a" href="chatbot">Chatbot</a>
+        <a class="a" href="Talenttree.html">Talent tree</a>
         <a class="a" href="socials.html">Socials</a>
                  
         </nav>
-            <h1 class="intro">welkom bij de quiz van Shane </h1>   
-    
+            <h1 class="intro">Welkom bij de quiz van Shane </h1>   
+          <!--vraag en antwoorden-->
 <div id="quiz-container">
     <div class="question" id="question1">
         <h3>vraag 1: Waar staat js voor?</h3>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="question" id="question2">
-        <h3>vraag 2: wat is html de funcie?</h3>
+        <h3>vraag 2: Wat is html de funcie?</h3>
         <label>
             <input type="radio" name="q2" value="skelet van de website"> skelet van de website
         </label>
@@ -47,7 +47,7 @@
     </div>
 
     <div class="question" id="question3">
-        <h3>vraag 3: hoeveel jaar duurt deze opleiding?</h3>
+        <h3>vraag 3: Hoeveel jaar duurt deze opleiding?</h3>
         <label>
             <input type="radio" name="q3" value="4 jaar"> 4 jaar
         </label>
@@ -59,7 +59,7 @@
         </label>
     </div>
     <div class="question" id="question4">
-        <h3>vraag 4: met php kan je je website mooi maken?</h3>
+        <h3>vraag 4: Met php kan je je website mooi maken?</h3>
         <label>
             <input type="radio" name="q4" value="ja"> ja
         </label>
@@ -69,7 +69,7 @@
        
     </div>
     <div class="question" id="question5">
-        <h3>vraag 5: js staat voor java</h3>
+        <h3>vraag 5: Js staat voor java</h3>
         <label>
             <input type="radio" name="q5" value="ja"> ja
         </label>
@@ -89,7 +89,7 @@
        
     </div>
     <div class="question" id="question7">
-        <h3>vraag 7: een break kan je maken door de br tag te gebruiken</h3>
+        <h3>vraag 7: Een break kan je maken door de br tag te gebruiken</h3>
         <label>
             <input type="radio" name="q7" value="ja"> ja
         </label>
@@ -97,6 +97,8 @@
             <input type="radio" name="q7" value="nee"> nee
         </label>
         
+
+        <!--controleer de vragen-->
     </div>
     <button onclick="checkAnswers()">controleer je antwoorden</button>
     
@@ -104,7 +106,7 @@
 
 <script>
     function checkAnswers() {
-        // Get user's answers
+        // krijg de antwoorden van de gebruiker
         var answer1 = document.querySelector('input[name="q1"]:checked');
         var answer2 = document.querySelector('input[name="q2"]:checked');
         var answer3 = document.querySelector('input[name="q3"]:checked');
@@ -113,9 +115,9 @@
         var answer6 = document.querySelector('input[name="q6"]:checked');
         var answer7 = document.querySelector('input[name="q7"]:checked');
 
-        // `of alle vragen zijn beantwoord
+        // kijkt of alle vragen zijn beantwoord
         if (answer1 && answer2 && answer3 && answer4 && answer5 && answer6 && answer7) {
-            // Check answers and provide feedback
+          // controleert alle antwoorden
             var score = 0;
 
             if (answer1.value === "javascript") {
