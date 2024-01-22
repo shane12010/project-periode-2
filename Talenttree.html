@@ -39,6 +39,23 @@
     <ul class="nested">
     <li>• Ervaring met iOS- of Android-ontwikkeling, bijvoorbeeld met Swift, Kotlin of React Native</li>
     <li>• Begrip van mobiele ontwerp principes en gebruikerservaring.</li>
+    <li><span class="caret">DevOps:</span>
+      <ul class="nested">
+      <li>•	Versiebeheer: Bekendheid met tools zoals Git voor samenwerking en versiebeheer.</li>
+      <li>• Continous Integration/Continuous Deployment (CI/CD): Ervaring met CI/CD-pipelines en automatiseringstools zoals Jenkins, Travis CI, of GitLab CI.</li>
+      <li><span class="caret"></span>Cloud Computing:</span>
+        <ul class="nested">
+        <li>•	Ervaring met cloudplatforms zoals AWS, Azure, of Google Cloud.</li>
+        <li>•	Kennis van serverless architecturen en containers zoals Docker en Kubernetes.</li>
+        <li><span class="caret">Soft skills:</span>
+          <ul class="nested">
+          <li>•	Teamwerk: Vermogen om effectief in een team te werken en samen te werken aan projecten.</li>
+          <li>•	Communicatie: Duidelijke communicatie van technische concepten aan zowel technische als niet-technische belanghebbenden.</li>
+          <li>•	Probleemoplossend vermogen: Proactief identificeren en oplossen van problemen.</li>
+          <li><span class="caret">Levenslang leren:</span>
+            <ul class="nested">
+            <li>•	Bereidheid om nieuwe technologieën en ontwikkelingen in de softwareontwikkeling bij te houden. </li>
+        
 
 
 <script>
@@ -47,6 +64,7 @@ var i;
   
 for (i = 0; i < toggler.length; i++) {
 toggler[i].addEventListener("click", function() {
+  
 this.parentElement.querySelector(".nested").classList.toggle("active");
 this.classList.toggle("caret-down");
     });
