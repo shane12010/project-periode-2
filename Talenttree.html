@@ -14,47 +14,47 @@
     <a class="a" href="quiz1.html">Quiz</a>
     <a class="a" href="chatbot">Chatbot</a>
     <a class="a" href="Talenttree.html">Talent tree</a>
-    <a class="a" href="socials.html">Socials</a>
-             
+    <a class="a" href="socials.html">Socials</a>       
     </nav>
-    <h1>
-        Software developer Talenttree
-    </h1>
-    <ul id="myUL">
-        <li><span class="caret"></span>
-          <ul class="nested">
-            <li></li>
-            <li>Coffee</li>
-            <li><span class="caret">Tea</span>
-              <ul class="nested">
-                <li>Black Tea</li>
-                <li>White Tea</li>
-                <li><span class="caret">Green Tea</span>
-                  <ul class="nested">
-                    <li>Sencha</li>
-                    <li>Gyokuro</li>
-                    <li>Matcha</li>
-                    <li>Pi Lo Chun</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      
+
+
+<h1>
+  Software developer Talenttree
+</h1>
+
+<ul id="myUL">
+<li><span class="caret">Basisvaardigheden</span>
+<ul class="nested">
+<li><span class="caret">Beheersing van ten minste één programmeertaal</span>
+<ul class="nested">
+<li>• Java, Python, C++, JavaScript</li>
+<li>• Probleemoplossend vermogen: Vermogen om complexe problemen te analyseren en effectieve oplossingen te bedenken.</li>
+<li>• Algoritmen en gegevensstructuren: Begrip van fundamentele algoritmen en gegevensstructuren.</li>
+<li><span class="caret">Webontwikkeling</span>
+<ul class="nested">
+  <li>• Front-end ontwikkeling: Kennis van HTML, CSS, JavaScript en populaire front-end frameworks zoals React, Angular of Vue.js.</li>
+  <li>• Back-end ontwikkeling: Ervaring met server-side technologieën zoals Node.js, Django, Ruby on Rails, etc.</li>
+  <li>• Databases: Kennis van databasesystemen zoals MySQL, PostgreSQL, MongoDB, en SQL-vaardigheden.</li>
+  <li><span class="caret">Mobiele ontwikkeling:</span>
+    <ul class="nested">
+    <li>• Ervaring met iOS- of Android-ontwikkeling, bijvoorbeeld met Swift, Kotlin of React Native</li>
+    <li>• Begrip van mobiele ontwerp principes en gebruikerservaring.</li>
+
 
 <script>
- var toggler = document.getElementsByClassName("caret");
-  var i;
+var toggler = document.getElementsByClassName("caret");
+var i;
   
-  for (i = 0; i < toggler.length; i++) {
-    toggler[i].addEventListener("click", function() {
-      this.parentElement.querySelector(".nested").classList.toggle("active");
-      this.classList.toggle("caret-down");
+for (i = 0; i < toggler.length; i++) {
+toggler[i].addEventListener("click", function() {
+this.parentElement.querySelector(".nested").classList.toggle("active");
+this.classList.toggle("caret-down");
     });
   }
   
-  </script>
+</script>
+
+
+
 </body>
 </html>
