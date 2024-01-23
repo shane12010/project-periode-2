@@ -7,12 +7,30 @@
     <title>Simple AI Chatbot</title>
 </head>
 <body>
+    <nav>
+        <img class="logo" src="logo.png" alt="" />
+        <a class="a" href="home.html">Home</a>
+        <a class="a" href="quiz1.html">Quiz</a>
+        <a class="a" href="chatbot.html">Chatbot</a>
+        <a class="a" href="Talenttree.html">Talent tree</a>
+        <a class="a" href="socials.html">Socials</a>
+      </nav>
     <div class="chat-container" id="chatContainer">
         <div class="chat-box" id="chatBox"></div>
         <input class="bericht" type="text" id="userInput" placeholder="Type your message...">
         <button onclick="sendMessage()">Send</button>
     </div>
-    <script src="script.js"></script>
+    <script>function sendMessage () {
+        let userinput = document.getElementById("userInput").value;
+        let userinputsplit = userinput.split (" ")
+        if(userinputsplit.includes("opendag")) {
+            response = "De opendag is op 26/27 Januari."
+        }
+        if(userinputsplit.includes("programmeertalen")) {
+            response = "Programmeertalen zoals HTML, CSS, Javascript, PHP etc."
+        }
+        document.getElementById("chatBox").innerText = response
+    }</script>
 <p>jatoch</p>
 </body>
 </html>
