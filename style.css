@@ -137,24 +137,44 @@ padding-top: 30%;
 
 }
 .chat-container {
-  width: 500px;
+  margin-left: 530px;
+  margin-top: 50px;
+  width: 400px;
+  height: 480px;
   border: 2px solid #000000;
   border-radius: 5px;
   overflow: hidden;
 }
 
 .chat-box {
-  height: 500px;
+  height: 395px;
   padding: 10px;
   overflow-y: scroll;
   background-color: #ffffff;
+  width: 369px;
+  margin-left: 4px;
+  margin-top: 4px;
+  border: solid 2px;
+  border-radius: 7px
 }
 
-.bericht{
+.chatbotbericht{
   background-color: rgb(255, 255, 255);
   color: black;
-  border-color: black;
-  width: 100%;
-  
+  border-radius: 7px;
+  border-color: green;
+  margin-top: 4px;
+  margin-left: 4px;
+  height: 47px;
+  width: 300px;
 
+
+}
+
+.chatbotbutton{
+  background-color: green;
+  border-color: #dbff4a;
+  height: 50px;
+  width: 80px;
+  border-radius: 7px;
 }
