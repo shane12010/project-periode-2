@@ -118,7 +118,7 @@ ul, #myUL {
 
 
 .ttf{
-padding-top: 30%;
+padding-top: 33%;
 }
 
 .t1{
@@ -134,7 +134,12 @@ padding-top: 30%;
 
 .talenttotal{
   width: 33%;
+<<<<<<< Updated upstream
 
+=======
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+>>>>>>> Stashed changes
 }
 .chat-container {
   margin-left: 530px;
@@ -161,6 +166,7 @@ padding-top: 30%;
 .chatbotbericht{
   background-color: rgb(255, 255, 255);
   color: black;
+<<<<<<< HEAD
   border-radius: 7px;
   border-color: green;
   margin-top: 4px;
@@ -177,4 +183,24 @@ padding-top: 30%;
   height: 50px;
   width: 80px;
   border-radius: 7px;
+=======
+  border-color: black;
+  width: 100%;
+  
+<<<<<<< Updated upstream
+
+=======
+=======
+>>>>>>> e7e0aa46f9a63f761ebae3f3233f36f7aa4d27b9
+=======
+}
+
+.links{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> 6f7991fe6da943c2481fa3713eddd26af3547544
 }
