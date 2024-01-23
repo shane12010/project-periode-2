@@ -2,16 +2,17 @@ body{
     font-size: 20px;
     font-family: sans-serif;
     color: #333;
-    background-color: #3fb83f;
+    background-color: #006445;
  
     
   }
   nav{
-    background-color: #006445;
+    background-color: #089367;
     margin: -8px;
     height: 80px;
     display: flex;
     justify-content: space-around;
+  
 }
  
 
@@ -23,7 +24,7 @@ body{
     justify-content: space-around;
     height: 10px;
     margin-top: 30px;
-    color:  #dbff4a;
+    color:  #ffffff;
   }
  
   .logo{
@@ -114,7 +115,10 @@ ul, #myUL {
 .foto1{
   padding-top: 0%;
   padding: 5px;
-  width: 97vw;
+  width: 98vw;
+  align-items: center;
+  padding-left: 0vw;
+  
 
 }
 .h2{
