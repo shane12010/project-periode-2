@@ -1,89 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-   
-  <nav>
-    <img class="logo" src="logo.png" alt="">
-    <a class="a" href="home.html">Home</a>
-    <a class="a" href="quiz1.html">Quiz</a>
-    <a class="a" href="chatbot.html">Chatbot</a>
-    <a class="a" href="Talenttree.html">Talent tree</a>
-    <a class="a" href="socials.html">Socials</a>
-             
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="logo.png" alt="" />
+      <a class="a" href="home.html">Home</a>
+      <a class="a" href="quiz1.html">Quiz</a>
+      <a class="a" href="chatbot.html">Chatbot</a>
+      <a class="a" href="Talenttree.html">Talent tree</a>
+      <a class="a" href="socials.html">Socials</a>
     </nav>
 
-<img class="foto1" src="tcrhome.jpg" alt="tcrhome.jpg">
+    <img class="foto1" src="tcrhome.jpg" alt="tcrhome.jpg" />
 
-<!--HTML-structuur voor de countdown-->
-<div id="countdown"></div>
+    <!--HTML-structuur voor de countdown-->
+    <div id="countdown"></div>
 
-<!--JavaScript voor de countdown-->
-<script>
-  // Stel dedatum voor het aftellen in (26 januari)
-  var targetDate = new Date("January 26, 2024 00:00:00").getTime();
+    <!--JavaScript voor de countdown-->
+    <script>
+      // Stel dedatum voor het aftellen in (26 januari)
+      var targetDate = new Date("January 26, 2024 00:00:00").getTime();
 
-  // Functie om de afteltimer bij te werken
-  function updateCountdown() {
-    var now = new Date().getTime();
-    var timeDifference = targetDate - now;
+      // Functie om de afteltimer bij te werken
+      function updateCountdown() {
+        var now = new Date().getTime();
+        var timeDifference = targetDate - now;
 
-    // Bereken dagen, uren, minuten en seconden
-    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        // Bereken dagen, uren, minuten en seconden
+        var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor(
+          (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    // Geef het aftellen weer
-    var countdownElement = document.getElementById('countdown');
-    countdownElement.textContent = days + " dagen " + hours + " uren " + minutes + " minuten " + seconds + " seconde";
+        // Geef het aftellen weer
+        var countdownElement = document.getElementById("countdown");
+        countdownElement.textContent =
+          days +
+          " dagen " +
+          hours +
+          " uren " +
+          minutes +
+          " minuten " +
+          seconds +
+          " seconde";
 
-    // Controleer of het aftellen nul heeft bereikt
-    if (timeDifference <= 0) {
-      countdownElement.textContent = "de opendag is er";
-    } else {
-      // Roep de functie na 1 seconde herhalend aan
-      setTimeout(updateCountdown, 1000);
-    }
-  }
+        // Controleer of het aftellen nul heeft bereikt
+        if (timeDifference <= 0) {
+          countdownElement.textContent = "de opendag is er";
+        } else {
+          // Roep de functie na 1 seconde herhalend aan
+          setTimeout(updateCountdown, 1000);
+        }
+      }
 
-  // Eerste oproep om het aftellen te starten
-  updateCountdown();
-</script>
-<h2 class="h2">tot de open dag</h2>
+      // Eerste oproep om het aftellen te starten
+      updateCountdown();
+    </script>
+    <h2 class="h2">tot de open dag</h2>
 
-<p class="tekst2">Ben je op zoek naar een leuke vervolgopleiding?
-   Heb je nog vragen over bol- en bbl of wil je meer weten over de doorstroommogelijkheden?
-    Dan kan een bezoek aan een Open dag je hierbij helpen.
-     Tijdens de Open Dag ervaar je de sfeer van een locatie en onze studenten én docenten beantwoorden graag jouw vragen. 
-<br><br>
-  Kom langs. Want op onze Open dagen komt techniek tot leven. 
- <br> <br>
-  Vrijdag 26 januari '24 |15.00 - 20.00 uur (de locatie Middelharnis is gesloten) <br>
-  Zaterdag 27 januari '24 |10.00 - 14.00 uur (de locatie Middelharnis is gesloten)</p>
+    <p class="tekst2">
+      Ben je op zoek naar een leuke vervolgopleiding? Heb je nog vragen over
+      bol- en bbl of wil je meer weten over de doorstroommogelijkheden? Dan kan
+      een bezoek aan een Open dag je hierbij helpen. Tijdens de Open Dag ervaar
+      je de sfeer van een locatie en onze studenten én docenten beantwoorden
+      graag jouw vragen. <br /><br />
+      Kom langs. Want op onze Open dagen komt techniek tot leven.
+      <br />
+      <br />
+      Vrijdag 26 januari '24 |15.00 - 20.00 uur (de locatie Middelharnis is
+      gesloten) <br />
+      Zaterdag 27 januari '24 |10.00 - 14.00 uur (de locatie Middelharnis is
+      gesloten)
+    </p>
 
-  <a href="https://www.techniekcollegerotterdam.nl/studeren-bij-ons/open-dag">klik hier om je aan te melden voor de open dag</a>
-<br>
-<img class="foto1" src="Soufiane-Touzani-3.jpg" alt="soufiane Touzani">
+    <a href="https://www.techniekcollegerotterdam.nl/studeren-bij-ons/open-dag"
+      >klik hier om je aan te melden voor de open dag</a
+    >
+    <br />
+    <img class="foto1" src="Soufiane-Touzani-3.jpg" alt="soufiane Touzani" />
 
-  <p class="tekst2">Op de Open dag van vrijdag 26 januari is Soufiane Touzani aanwezig op de RDM.
-     Kom kijken naar de 'Aftrap ⚽' van de Open dag.
-      Hij laat je zien welke kanten je op kunt in de techniek. 
-      Dan ben je daarna helemaal klaar om de Open dag te bezoeken.
-       O ja, wil je de Open dag op een andere locatie bezoeken, dan is het belangrijk dat je je daarvoor ook registreert,
-        dan houden we rekening met je komst.</p>
-        <a href="https://www.techniekcollegerotterdam.nl/stories/ontdek-techniek-met-soufiane-touzani">klik hier om erbij te zijn</a>
+    <p class="tekst2">
+      Op de Open dag van vrijdag 26 januari is Soufiane Touzani aanwezig op de
+      RDM. Kom kijken naar de 'Aftrap ⚽' van de Open dag. Hij laat je zien
+      welke kanten je op kunt in de techniek. Dan ben je daarna helemaal klaar
+      om de Open dag te bezoeken. O ja, wil je de Open dag op een andere locatie
+      bezoeken, dan is het belangrijk dat je je daarvoor ook registreert, dan
+      houden we rekening met je komst.
+    </p>
+    <a
+      href="https://www.techniekcollegerotterdam.nl/stories/ontdek-techniek-met-soufiane-touzani"
+      >klik hier om erbij te zijn</a
+    >
 
-
-            
-            <footer>
-                &copy; 2024  home Page
-            </footer>
-</body>
+    <footer>&copy; 2024 home Page</footer>
+  </body>
 </html>
