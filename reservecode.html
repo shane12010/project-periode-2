@@ -1,11 +1,15 @@
-<style>
-    body {
-      background-image: url(tcrhome.jpg);
-      background-repeat: no-repeat;
-   background-attachment: fixed;
-  background-size: 100% 100%;
 
-    }
-    </style>
-
-    <!--...-->
+     <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+     </head>
+     <body>
+      <script> // Code om de foto naast de tekst te zetten 
+        var img = document.querySelector(".fotoquiz");
+         var text = document.querySelector(".intro"); 
+         text.style.display = "inline-block"; text.style.verticalAlign = "top"; 
+         var container = document.createElement("div"); container.style.display = "flex"; 
+         container.appendChild(img); container.appendChild(text); document.body.appendChild(container); </script>
+     </body>
+     </html>
