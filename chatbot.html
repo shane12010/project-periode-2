@@ -17,10 +17,11 @@
       </nav>
     <div class="chat-container" id="chatContainer">
         <div class="chat-box" id="chatBox"></div>
-        <input class="bericht" type="text" id="userInput" placeholder="Type your message...">
-        <button onclick="sendMessage()">Send</button>
+        <input class="chatbotbericht" type="text" id="userInput" placeholder="Type your message...">
+        <button class="chatbotbutton" onclick="sendMessage()">Send</button>
     </div>
-    <script>function sendMessage () {
+    <script>
+    function sendMessage () {
         let userinput = document.getElementById("userInput").value;
         let userinputsplit = userinput.split (" ")
         if(userinputsplit.includes("opendag")) {
@@ -30,7 +31,7 @@
             response = "Programmeertalen zoals HTML, CSS, Javascript, PHP etc."
         }
         document.getElementById("chatBox").innerText = response
-    }</script>
-<p>jatoch</p>
+    }
+    </script>
 </body>
 </html>
