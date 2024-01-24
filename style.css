@@ -33,6 +33,7 @@ body{
 
   .question{
     font-weight: 600;
+    color: white;
   }
   .answers {
       margin-bottom: 20px;
@@ -134,12 +135,6 @@ padding-top: 33%;
 
 .talenttotal{
   width: 33%;
-<<<<<<< Updated upstream
-
-=======
-<<<<<<< Updated upstream
-<<<<<<< HEAD
->>>>>>> Stashed changes
 }
 .chat-container {
   margin-left: 530px;
@@ -166,7 +161,7 @@ padding-top: 33%;
 .chatbotbericht{
   background-color: rgb(255, 255, 255);
   color: black;
-<<<<<<< HEAD
+
   border-radius: 7px;
   border-color: green;
   margin-top: 4px;
@@ -175,30 +170,21 @@ padding-top: 33%;
   width: 300px;
 
 
-}
-
-.chatbotbutton{
+}.chatbotbutton{
   background-color: green;
   border-color: #dbff4a;
   height: 50px;
   width: 80px;
   border-radius: 7px;
-=======
   border-color: black;
   width: 100%;
-  
-<<<<<<< Updated upstream
-
-=======
-=======
->>>>>>> e7e0aa46f9a63f761ebae3f3233f36f7aa4d27b9
-=======
 }
 
 .links{
   text-decoration: none;
   font-weight: bold;
   color: white;
+<<<<<<< Updated upstream
   
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
@@ -206,4 +192,14 @@ padding-top: 33%;
 =======
 >>>>>>> 6f7991fe6da943c2481fa3713eddd26af3547544
 >>>>>>> a9bf22ee513b8be9d773980aa76842f4852a843c
+=======
+}
+.fotoquiz{
+  padding-left: 60%;
+  width: 20%;
+  padding-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+>>>>>>> Stashed changes
 }
