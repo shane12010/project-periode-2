@@ -146,14 +146,21 @@
             if (answer7.value === "ja") {
                 score++;
             }
+            
+            var percentage = (score / 7) * 100;
+// geeft een alert als je hoger dan 60% hebt
+if (percentage >= 60) {
+    alert("Deze opleiding is waarschijnlijk wat voor jou!");
+}
 
-
-            alert("Your score: " + score + "/7");
-        } else {
-            alert("antwoord op alles voor je het inleverd.");
-        }
-    }
+alert("Your score: " + score + "/7 (" + percentage.toFixed(1) + "%)");
+} else {
+alert("antwoord op alles voor je het inleverd.");
+}
+}
 </script>
+
+            
 <br><br>
 <footer>
     &copy; 2024 quiz Page
