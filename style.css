@@ -14,7 +14,6 @@ body{
     justify-content: space-around;
   
 }
- 
 
 .a {
     text-decoration: none;
@@ -202,7 +201,7 @@ padding-top: 33%;
 
 }
 
-<<<<<<< Updated upstream
+
 .Socials{
   text-decoration: none;
   color: #dbff4a;
@@ -211,7 +210,8 @@ padding-top: 33%;
 .containersocials{
 display: flex;
 justify-content: space-around;
-=======
+}
+
 .welkomtext{
   width: 450px;
   margin-top: 200px;
@@ -222,5 +222,4 @@ justify-content: space-around;
   border-radius: 12px;
   border: solid 2px;
   border-color: rgb(132, 229, 80);
->>>>>>> Stashed changes
 }
