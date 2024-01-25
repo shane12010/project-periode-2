@@ -125,9 +125,6 @@ padding-top: 33%;
 
 }
 
-.t3{
-  
-}
 
 .talenttotal{
   width: 33%;
@@ -193,4 +190,14 @@ padding-top: 33%;
   align-items: center;
   justify-content: center;
 
+}
+
+.Socials{
+  text-decoration: none;
+  color: #dbff4a;
+}
+
+.containersocials{
+display: flex;
+justify-content: space-around;
 }
