@@ -16,6 +16,12 @@
         <a class="a" href="Talenttree.html">Talent tree</a>
         <a class="a" href="socials.html">Socials</a>
       </nav>
+
+      <div class="welkomtext">
+        <h1>Welkom dit is de opendag chatbot AI.</h1>
+        <p>Deze chatbot beantwoord alleen vragen die gaan over de opendag.</p>
+      </div>
+
     <div class="chat-container" id="chatContainer">
         <div class="chat-box" id="chatBox"></div>
         <input class="chatbotbericht" type="text" id="userInput" placeholder="Type your message...">
@@ -27,24 +33,30 @@
         let userinputsplit = userinput.split (" ")
 
             if(userinputsplit.includes("opendag")) {
-            response = "De opendag is op 26/27 Januari."
+            response = "AI: De opendag is op 26/27 Januari.";
             }
            
-            if(userinputsplit.includes("programmeertalen")) {
-            response = "Programmeertalen zoals HTML, CSS, Javascript, PHP etc."
+            else if(userinputsplit.includes("programmeertalen")) {
+                response = "AI: Programmeertalen zoals HTML, CSS, Javascript, PHP etc.";
             }
 
-            if(userinputsplit.includes("lang")) {
-            response = "De opleiding duurt 4 jaar, versneld 3 jaar."
+            else if(userinputsplit.includes("lang")) {
+                response = "AI: De opleiding duurt 4 jaar, versneld 3 jaar.";
             }
 
-            if(userinputsplit.includes("college")) {
-            response = "Wij zijn Techniek College Rotterdam. De grootste mbo-school voor technisch beroepsonderwijs in Rotterdam. Bij ons vind je technische mbo-opleidingen, cursussen en trainingen voor jongeren én volwassenen."
+            else if(userinputsplit.includes("college")) {
+                response = "AI: Wij zijn Techniek College Rotterdam. De grootste mbo-school voor technisch beroepsonderwijs in Rotterdam. Bij ons vind je technische mbo-opleidingen, cursussen en trainingen voor jongeren én volwassenen.";
             }
 
-            if(userinputsplit.includes("")) {
-            response = "De opendag is op 26/27 Januari."
+            else if(userinputsplit.includes("opleiding")) {
+                response = "AI: Websites, apps en zelfs de coolste games. In deze software developer opleiding ga je aan de slag met het ontwerpen en bouwen van software. Je zorgt ervoor dat ze technisch goed werken. Je werkt vaak samen met collega's én met de klant. Je luistert goed naar hun wensen en ideeën. En je gaat ermee aan de slag. Voor meer informatie bezoek www.techniekcollege.nl"
             }
+            
+            else{
+                response = "AI: Sorry heb dit niet begrepen, kunt u het herhalen?";
+            }
+
+            response += "\nAI: Kan ik u verder helpen?"
         
         document.getElementById("chatBox").innerText = response
     }

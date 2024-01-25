@@ -131,10 +131,11 @@ padding-top: 33%;
 }
 
 .chat-container {
-  margin-left: 530px;
-  margin-top: 50px;
+  margin-left: 650px;
+  margin-top: -400px;
   width: 400px;
   height: 480px;
+  border-color: rgb(132, 229, 80);
   border: 2px solid #000000;
   border-radius: 5px;
   overflow: hidden;
@@ -175,6 +176,15 @@ padding-top: 33%;
   background-color: green;
 }
 
+.chatbotbutton:hover{
+  border-color: rgb(132, 229, 80);
+  height: 50px;
+  width: 80px;
+  border-radius: 7px;
+  border: solid 2px;
+  background-color: rgb(132, 229, 80);
+}
+
 .links{
   text-decoration: none;
   font-weight: bold;
@@ -192,6 +202,7 @@ padding-top: 33%;
 
 }
 
+<<<<<<< Updated upstream
 .Socials{
   text-decoration: none;
   color: #dbff4a;
@@ -200,4 +211,16 @@ padding-top: 33%;
 .containersocials{
 display: flex;
 justify-content: space-around;
+=======
+.welkomtext{
+  width: 450px;
+  margin-top: 200px;
+  margin-left: 75px;
+  background-color: #006445;
+  color: rgb(132, 229, 80);
+  padding: 40px;
+  border-radius: 12px;
+  border: solid 2px;
+  border-color: rgb(132, 229, 80);
+>>>>>>> Stashed changes
 }
