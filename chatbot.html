@@ -25,15 +25,29 @@
     function sendMessage () {
         let userinput = document.getElementById("userInput").value;
         let userinputsplit = userinput.split (" ")
-        if(userinputsplit.includes("opendag")) {
+
+            if(userinputsplit.includes("opendag")) {
             response = "De opendag is op 26/27 Januari."
-        }
-        if(userinputsplit.includes("programmeertalen")) {
+            }
+           
+            if(userinputsplit.includes("programmeertalen")) {
             response = "Programmeertalen zoals HTML, CSS, Javascript, PHP etc."
-        }
+            }
+
+            if(userinputsplit.includes("lang")) {
+            response = "De opleiding duurt 4 jaar, versneld 3 jaar."
+            }
+
+            if(userinputsplit.includes("college")) {
+            response = "Wij zijn Techniek College Rotterdam. De grootste mbo-school voor technisch beroepsonderwijs in Rotterdam. Bij ons vind je technische mbo-opleidingen, cursussen en trainingen voor jongeren én volwassenen."
+            }
+
+            if(userinputsplit.includes("")) {
+            response = "De opendag is op 26/27 Januari."
+            }
+        
         document.getElementById("chatBox").innerText = response
     }
     </script>
-    <p>dfff</p>
 </body>
 </html>
